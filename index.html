@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GifTastic!</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Project specific CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<div class="container text-center">
+				<h1>GifTastic!</h1>
+				<p>Click the buttons for the emotion gifs you want to see!</p>
+			</div>
+		</div>
+		<!-- Buttons will get dumped here -->
+		<div id="buttons-view"></div>
+		<!-- Input form for adding more buttons -->
+		<form id="emotion-form">
+			<label for="emotion-input"> Add an emotion </label>
+			<input type="text" id="emotion-input"><br>
+			<!-- Button triggers new emotion to be added -->
+			<input id="add-emotion" type="submit" value="Add an emotion">
+		</form>
+		<!-- Gifs will get dumped here -->
+		<div id="gifs-appear-here"></div>
+	</div>
+</body>
+
+<!-- bootstrap jquery -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"
+	integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+	crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Jquery for the GifTastic -->
+ <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- Call the GifTastic JavaScript -->
+<script src="assets/javascript/app.js" type="text/javascript"></script>
+</html>
