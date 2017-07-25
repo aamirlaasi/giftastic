@@ -92,7 +92,9 @@ function getGifs(link) {
 renderButtons();
 
 // Event listener for all button elements
-$("button").on("click", function() {
+$(document.body).on("click", "button" , function() {
+	// Clear out existing gifs
+	$("#gifs-appear-here").empty();
 	// In this case, the "this" keyword refers to the button
 	// that was clicked
 	var emotion = $(this).attr("data-name");
@@ -127,17 +129,19 @@ $(document.body).on("click",".gif", function() {
 
 // Event listener for adding another button
 $("#add-emotion").on("click", function(event) {
-	event.preventDefault();
-
+	event.preventDefault();	
 	// This line grabs the input from the textbox
 	var emotion = $("#emotion-input").val().trim();
 
-	// The emotion from the textbox is then added to our array
-	topics.push(emotion);
+	// Only run this code if there is something in the input box
+	if(emotion !== "") {
+		// The emotion from the textbox is then added to our array
+		topics.push(emotion);
 
-	// Calling renderButtons which handles the processing of 
-	// our topics array
-	renderButtons();
+		// Calling renderButtons which handles the processing of 
+		// our topics array
+		renderButtons();
+	}
 })
 
 });
