@@ -101,7 +101,7 @@ $(document.body).on("click", "button" , function() {
 
 	// Constructing a URL to search Giphy for the name of
 	// the emotion 
-	var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + 
+	var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + 
 					emotion + 
 					"&api_key=de488d7c6d8642f591ec58687c3835bc&limit=10";
 
